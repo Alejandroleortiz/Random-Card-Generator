@@ -41,5 +41,11 @@ window.onload = function() {
   let cartaSimbolo2 = document.getElementById("simbolo2");
   cartaSimbolo2.innerHTML = card.suit;
 
+  if (card.suit === "♥" || card.suit === "♦") {
+    cartaSimbolo.className += " redColor";
+    cartaSimbolo2.className += " redColor";
+    cartaValor.className += " redColor";
+  }
+
   console.log("Todo esta funcionando");
 };
