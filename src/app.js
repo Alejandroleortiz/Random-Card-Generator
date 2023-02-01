@@ -22,16 +22,28 @@ const values = [
   "Q",
   "K"
 ];
-const cards = [];
+const mazoCartas = [];
 
-function cardBuilder() {
-  for (let s = 0; s < suits.length; s++) {
-    for (let v = 0; v < values.length; v++) {
-      let value = values[v];
-      let suit = suits[s];
-      cards.push({ value, suit });
-    }
+//function cardBuilder() {
+for (let s = 0; s < suits.length; s++) {
+  for (let v = 0; v < values.length; v++) {
+    let value = values[v];
+    let suit = suits[s];
+    mazoCartas.push({ value, suit });
   }
-  return cards;
 }
-console.log(cardBuilder());
+//return cards;
+//}
+
+console.log(
+  "La carta es " +
+    JSON.stringify(mazoCartas[Math.floor(Math.random(mazoCartas.length) * 52)])
+);
+
+/*let card = cardBuilder();
+
+let randomCards = () => {
+  return Math.floor(Math.random(card) * 52);
+};
+
+console.log(randomCards(cards));*/
