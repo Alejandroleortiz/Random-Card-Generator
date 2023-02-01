@@ -1,43 +1,15 @@
-body {
-  background: #0e7e12;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  display: inline-flexbox;
-  background: white;
-  margin: auto;
-  height: 300px;
-  width: 200px;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid black;
-  position: relative;
-}
-
 .top-suit {
-  position: absolute;
-  top: 5%;
-  left: 20px;
   font-size: 50px;
 }
 
 .button-suit {
-  position: absolute;
-  top: 80%;
-  right: 20px;
   font-size: 50px;
   transform: rotate(180deg);
 }
 
 .number {
   font-size: 120px;
-  position: absolute;
-  top: 50%;
   transform: translateY(-60%);
-  left: 35%;
 }
 
 .redColor {
