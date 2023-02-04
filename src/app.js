@@ -47,10 +47,18 @@ window.onload = function() {
     cartaValor.className += " redColor";
   } // asignar solo el color rojo a los simbolos de corazon y diamento con sus respectivos numeros
 
-  setTimeout(function() {
+  /*setTimeout(function() {
     //function para cambiar carta cada 10 segundos
     location.reload();
   }, 10000);
 
-  console.log("Todo esta funcionando");
+  console.log("Todo esta funcionando");*/
+
+  document.getElementById("height").addEventListener("input", function() {
+    document.querySelector(".card").style.height = this.value + "px";
+  });
+
+  document.getElementById("width").addEventListener("input", function() {
+    document.querySelector(".card").style.width = this.value + "px";
+  });
 };
