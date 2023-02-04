@@ -1,6 +1,6 @@
 .card {
-  max-width: 300px;
-  min-width: 250px;
+  width: 260px;
+  height: 350px;
 }
 
 .top-suit {
@@ -14,8 +14,18 @@
 
 .number {
   font-size: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .redColor {
   color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
